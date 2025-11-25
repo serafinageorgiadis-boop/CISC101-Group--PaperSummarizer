@@ -1,0 +1,16 @@
+This PR updates two modules:
+
+1) Module 2 — Section Loop
+- Introduces summary_level ("short" | "detailed")
+- "short": 1–2 sentences and a ≤50-word table entry
+- "detailed": paragraph + 3–5 bullets, plus a ≤50-word table entry
+- Keeps PS2 table budgets (≤50 words per section; ≤200 words total)
+
+2) Module 3 — Guardrails
+- Adds evidence_mode = "strict" to enforce text-bounded claims only
+- Standardized warnings:
+  • missing/empty → "Section skipped: no usable text was provided."
+  • short (<50 words) → "Section very short: summary may be incomplete."
+- No invented citations or claims
+
+Screenshots attached: PR page (title + description) and diff view.
